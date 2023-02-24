@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { menuItems, Meal } from '../menuItems';
+import { menuItems } from '../menuItems';
+import { Meal } from '../menuItems';
 
 @Component({
   selector: 'app-details',
