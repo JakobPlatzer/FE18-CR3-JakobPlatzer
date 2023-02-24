@@ -1,1 +1,18 @@
-<p>order works!</p>
+<h3>Your Order:</h3>
+
+<div class="order-items" *ngFor="let item of orderItems">
+    <p>{{item.name}}</p>
+    <p>{{item.price}}€</p>
+</div>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+    <div>
+        <label for="adress">Adress</label>
+        <input id="adress" type="text" formControlName="adress">
+    </div>
+    <button class="button" type="submit">Purchase</button>
+</form>

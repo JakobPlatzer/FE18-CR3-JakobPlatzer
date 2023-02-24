@@ -10,6 +10,8 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { OrderComponent } from './order/order.component';
 import { DetailsComponent } from './details/details.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { DetailsComponent } from './details/details.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

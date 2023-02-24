@@ -1,7 +1,7 @@
-<p>details works!</p>
 <div *ngIf="item">
     <h3>{{item.name}}</h3>
     <h4>{{item.price}}€</h4>
     <p>Ingredients: {{item.description}}</p>
     <p *ngIf="item.vfactor">{{item.vfactor}}</p>
+    <button (click)="addToOrder()">Order</button>
 </div>
