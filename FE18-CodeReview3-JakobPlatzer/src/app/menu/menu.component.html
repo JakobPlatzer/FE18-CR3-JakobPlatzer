@@ -1,11 +1,11 @@
 
 <div class="container row row-cols-1 row-cols-md-2 row-cols-lg-3">
-    <div class="col my-4" *ngFor="let item of menuItems">
+    <div class="col my-4" *ngFor="let item of menuItems ; index as itemId">
         <div class="card m-auto" style="width: 18rem;">
             <img src="{{item.image}}" class="card-img-top">
             <div class="card-body">
               <h4 class="card-title">{{item.name}}</h4>
-              <a href="#" class="btn btn-secondary m-1">Click for Details</a>
+              <a routerLink="menuItems/{{itemId}}" class="btn btn-secondary m-1">Click for Details</a>
               <br>
               <a href="#" class="btn btn-success m-1">Order</a>
             </div>
