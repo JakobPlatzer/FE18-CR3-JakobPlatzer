@@ -23,3 +23,6 @@ export class OrderService {
     return this.orderItems;
   }
 }
+
+
+// this is the basic order functionality
