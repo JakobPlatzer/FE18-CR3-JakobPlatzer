@@ -1,11 +1,14 @@
 .container {
     border: 2px solid white;
     background-color: rgb(0,0,0,0.6);
+
+    position: relative;
+    top: 18vh;
 }
 
 .formDiv {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 
     padding: 1vh;
 }
@@ -37,7 +40,4 @@ button {
 
     margin: 2vh;
     border: 2px solid white;
-
-    height: 6vh;
-    width: 6vw;
 }
