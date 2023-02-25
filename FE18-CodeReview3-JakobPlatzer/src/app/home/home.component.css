@@ -25,5 +25,7 @@
     color: white;
 
     font-size: 3em;
+    border: 2px solid white;
+    padding: 1%;
 }
 

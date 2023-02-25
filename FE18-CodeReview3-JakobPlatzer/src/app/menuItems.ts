@@ -1,3 +1,5 @@
+// This Array contains the items for the menu. 
+
 export const menuItems = [
     {
         name: "Pizza Margherita ",
@@ -71,6 +73,8 @@ export const menuItems = [
         availability: false
     }, 
 ]
+
+//This is the interface for the items. vfactor is optional and would just display if the meal is vegan or vegetarian.
 
 export interface Meal {
     name: string,

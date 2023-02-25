@@ -9,7 +9,6 @@
 
     position: relative;
     top: 18vh;
-
 }
 
 h1 {
@@ -21,5 +20,6 @@ h3 {
 }
 
 p {
-    color:white
+    color:white;
+    align-self: flex-start;
 }
