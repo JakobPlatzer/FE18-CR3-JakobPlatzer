@@ -5,9 +5,15 @@
             <img src="{{item.image}}" class="card-img-top">
             <div class="card-body">
               <h4 class="card-title">{{item.name}}</h4>
-              <a routerLink="/menuItems/{{itemId}}" class="btn btn-secondary m-1">Click for Details</a>
-              <br>
-              <a href="#" class="btn btn-success m-1">Order</a>
+
+              <ng-template [ngIf]="item.availability" [ngIfElse]="none">
+                  <a routerLink="/menuItems/{{itemId}}" class="btn btn-secondary m-1">Click for Details</a>
+                  <br>
+                  <p class="btn btn-success m-1" (click)="addToOrder(item)">Order</p>
+              </ng-template>
+              <ng-template #none>
+                <p>This item is currently not available.</p>
+              </ng-template>
             </div>
         </div>
     </div>

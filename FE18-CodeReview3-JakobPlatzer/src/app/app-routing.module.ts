@@ -17,6 +17,8 @@ const routes: Routes = [
     path:"menuItems/:itemId",component: DetailsComponent
   }, {
     path:"order",component: OrderComponent 
+  }, {
+    path: "**", component: HomeComponent
   }
 ];
 

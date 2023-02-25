@@ -10,6 +10,7 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 })
 export class OrderComponent implements OnInit {
   orderItems: Array<Meal> = [];
+  totalAmount: number = 0;
 
   checkoutForm = new FormGroup({
     name: new FormControl(''),
@@ -17,6 +18,10 @@ export class OrderComponent implements OnInit {
   });
 
   constructor(private orderService: OrderService, private fb: FormBuilder) {}
+
+  calculateAmount(item : Meal) {
+    this.totalAmount = this.totalAmount + item.price;
+  }
 
   clearOrder() {
     window.alert('Your order has been cleared');
@@ -30,6 +35,8 @@ export class OrderComponent implements OnInit {
 
   ngOnInit(): void {
     this.orderItems = this.orderService.getOrder();
+    this.calculateAmount
+    console.log(this.totalAmount)
   }
 
 }

@@ -1,6 +1,42 @@
 #homepage {
-    background-image: url("https://cdn.pixabay.com/photo/2017/11/11/10/07/pasta-2938708_1280.jpg");
+    /* background-image: url("https://cdn.pixabay.com/photo/2017/11/11/10/07/pasta-2938708_1280.jpg"); */
+    background-attachment: fixed;
+    background-size: cover;
 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#welcome {
+    border: 2px solid white;
+    background-color: rgb(0,0,0,0.6) ;
+    
+    width: 50vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: cursive;
+    font-style: italic;
+    
+}
+
+#welcome p {
+    color: white;
+    font-size: 5em;
+}
+
+#welcome a {
+    text-decoration: none;
+    color: white;
+
+    font-size: 3em;
+}
+
