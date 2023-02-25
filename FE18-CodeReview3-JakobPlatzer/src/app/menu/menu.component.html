@@ -5,6 +5,7 @@
             <img src="{{item.image}}" class="card-img-top border rounded-0">
             <div class="card-body">
               <h4 class="card-title">{{item.name}}</h4>
+              <h3 class="card-title text-light">{{item.price}} €</h3>
               <ng-template [ngIf]="item.availability" [ngIfElse]="none">
                   <p routerLink="/menuItems/{{itemId}}" class="btn m-1 rounded-0">Click for Details</p>
                   <br>
